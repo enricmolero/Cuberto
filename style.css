@@ -137,25 +137,25 @@ span {
 }
 
 @media (max-width: 768px) {
-    .project {
+    .apartados {
         flex-direction: column;
         padding: 15px;
     }
 
-    .project:nth-child(even) {
+    .apartados:nth-child(even) {
         flex-direction: column;
     }
 
-    .project .img {
+    .apartados .img {
         order: 1;
     }
 
-    .project .texto {
+    .apartados .texto {
         order: 1;
         margin-left: 0;
     }
 
-    .project .img img {
+    .apartados .img img {
         width: 100%;
         max-width: 300px;
         margin-left: 3%;
