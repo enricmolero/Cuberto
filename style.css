@@ -1,52 +1,53 @@
+/* Reseteo de estilos: elimina márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo del encabezado */
+header { 
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    background-color: white; /* Color de fondo */
+    color: rgb(25, 156, 156); /* Color del texto */
+}
+
+/* Estilo del cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    background-color: #ffffff; /* Color de fondo */
 }
 
+/* Estilo del título principal */
 h1 {
-    font-size: 50px;
-    color: rgb(45, 159, 201);
-    margin-bottom: 10px;
+    font-size: 50px; /* Tamaño de fuente */
+    color: rgb(45, 159, 201); /* Color del texto */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
+/* Estilo de los subtítulos */
 h2 {
-    font-size: 20px;
+    font-size: 20px; 
     color: rgb(163, 158, 158);
     margin-bottom: 10px;
 }
 
+/* Estilo de los títulos secundarios */
 h3 {
     font-size: 40px;
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 
-.mobil-develop {
-    font-size: 18px;
-    color: black;
-    margin-left: 13%;
-    padding: 15px;
-}
-
-header { 
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: rgb(25, 156, 156);
-}
-
+/* Contenedor principal de los apartados */
 .apartados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra los elementos */
 }
 
+/* Estilo general de la sección de apartados */
 .apartados {
     display: flex;
     align-items: center;
@@ -54,6 +55,7 @@ header {
     width: 100%;
 }
 
+/* Estilos de la sección de texto dentro de los apartados */
 .apartados .text {
     flex: 1;
     max-width: 400px;
@@ -61,6 +63,7 @@ header {
     margin-right: 25px;
 }
 
+/* Estilos de la sección de imágenes dentro de los apartados */
 .apartados .image {
     flex: 1;
     display: flex;
@@ -68,6 +71,7 @@ header {
     margin-top: 20px;
 }
 
+/* Estilos de las imágenes dentro de los apartados */
 .apartados .image img {
     width: 100%;
     max-width: 350px;
@@ -75,59 +79,33 @@ header {
     margin-left: 35%;
 }
 
+/* Estilo del primer apartado */
 .apartado1 {
     background: #F5EEF5;
     color: black;
 }
 
+/* Estilo del segundo apartado */
 .apartado2 {
     background: #FAF5F3;
     color: black;
 }
 
+/* Estilo del tercer apartado */
 .apartado3 {
     background: #F2F9F8;
     color: black;
 }
 
-footer {
-    background-color: #000000;
-    color: white;
-    padding: 40px 20px;
+/* Estilo del texto "Mobile development" */
+.mobil-develop {
+    font-size: 18px;
+    color: black;
+    margin-left: 13%;
+    padding: 15px;
 }
 
-.footer-enlaces {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 60px;
-    text-align: center;
-}
-
-.footer-columna {
-    flex: 1;
-    text-align: left;
-    min-width: 200px;
-    margin-bottom: 20px;
-}
-
-.footer-columna h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.footer-columna ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-columna ul li {
-    font-size: 14px;
-    margin: 5px 0;
-}
-
+/* Estilo del texto dentro del footer */
 span {
     color: rgb(255, 255, 255);
     font-size: 24px;
@@ -136,9 +114,54 @@ span {
     margin-bottom: 20px;
 }
 
+/* Estilos generales del footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Contenedor de los enlaces del footer */
+.footer-enlaces {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    gap: 50px; /* Espaciado entre columnas */
+    flex-wrap: wrap; /* Permite que se ajusten en dispositivos pequeños */
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+/* Estilo de cada columna en el footer */
+.footer-columna {
+    flex: 1;
+    text-align: left;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del título de cada columna */
+.footer-columna h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilo de la lista dentro del footer */
+.footer-columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo de los elementos de la lista del footer */
+.footer-columna ul li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
     .apartados {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección a columna */
         padding: 15px;
     }
 
@@ -147,11 +170,11 @@ span {
     }
 
     .apartados .img {
-        order: 1;
+        order: 1; /* Reordena la imagen */
     }
 
     .apartados .texto {
-        order: 1;
+        order: 1; /* Reordena el texto */
         margin-left: 0;
     }
 
@@ -162,9 +185,10 @@ span {
         margin-top: 10px;
     }
 
+    /* Ajustes en el footer para pantallas pequeñas */
     .footer-enlaces {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Organiza en dos columnas */
         gap: 30px;
         text-align: left;
     }
